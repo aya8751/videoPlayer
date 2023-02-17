@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+    --white-color: #fff;
+    --black-color:#000;
+    --main-color: #501075; 
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 63%;
+}
+body{
+    font-family:  "Questrial", sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(to right, rgba(141, 45, 226, 0.7), rgba(75, 0, 224, 0.507)), url("../images/backgraound.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+.container{
+    min-height: 70vh;
+    background: var(--white-color);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.container,
+.video-container{
+    border-radius: 1rem;
+}
+.main-title{
+    font-size: 3rem;
+}
+.video-container{
+    background-color: var(--black-color);
+    width: 90%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+.video{
+    cursor: pointer;
+    width: 60%;
+    height: 100%;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+.controls .btn{
+    border: 0;
+    background: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.controls .btn:hover{
+    color: #8116be;
+}
+
+.timeStamp{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+@media(max-width:46em){
+    html{
+        font-size: 56%;
+    }
+    .main-title{
+        font-size: 2.5rem;
+    }
+    .container{
+        width: 90%;
+    }
+}

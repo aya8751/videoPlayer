@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Custom Video Player</h1>
+        <div class="video-container">
+            <video src="videos/dance.mp4" class="video" poster="images/poster.png"></video>
+        </div>
+        <div class="controls">
+            <button class="btn" id="play">
+                <i class="fa fa-play fa-2x"></i>
+            </button>
+            <button class="btn" id="stop">
+                <i class="fa fa-stop fa-2x"></i>
+            </button>
+            <input type="range" class="progress" min="0" max="100" step=".1" value="0">
+            <span class="timeStamp">00:00</span>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
